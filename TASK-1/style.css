@@ -42,7 +42,7 @@ body{
 }
 header{
     border-bottom:1px solid rgba(0,0,0,.2) ;
-    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.1);
+    /* box-shadow: 1px 1px 4px 1px rgba(0,0,0,.1); */
     background-color: #fff;
 }
 nav{
@@ -123,14 +123,15 @@ i:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 40px 40px 40px;
 
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
 
 }
 .card{
-    width: 350px;
-    height: 280px;
+    width: 320px;
+    height: 330px;
     
     padding: 30px 30px;
     background-color: #fff;
@@ -151,12 +152,16 @@ i:hover{
 .card:hover{
     transform: scale(1.05);
     transition: all .3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,.2);
 }
 .internship-title{
     margin-top: 10px;
     font-size: 14px;
     color: var(--icons-color);
     margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 500;
     
 }
 .internship-title::first-letter{
@@ -185,3 +190,79 @@ i:hover{
     align-items: center;
     gap: 15px;
 }
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 8px 25px;
+    cursor: pointer;
+    background-color: rgb(0,123,255);
+    color: #fff;
+    border:none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+    margin-top: 10px;
+}
+.btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 30%;
+}
+.icon-container i{
+    font-size: 12px;
+    color: var(--icons-color);
+    
+
+}
+.icon-container p{
+    font-size: 12px;
+    min-width: 50%;
+}
+.footer{
+    padding: 10px 0;
+}
+.image-footer{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.input{
+    padding: 10px 30px;
+    width: 320px;
+}
+
+@media only screen and (max-width: 600px) {
+    .title{
+        font-size: 25px;
+    }
+    header{
+        overflow: hidden;
+    }
+    .links-container{
+        display: none;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+
+    }
+    .cards-container{
+        padding: 0px 20px 20px 20px;
+        gap: 20px;
+    }
+  }
+  section{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-bottom: 30px;
+  }
